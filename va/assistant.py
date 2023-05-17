@@ -36,14 +36,32 @@ def speak(say):
 
 print('start')
 
-for text in listen():
+# for text in listen():
+#     if text == 'закрыть':
+#         quit()
+#     elif text == 'блокнот':
+#         os.system('notepad.exe')
+#     elif text == 'во что бы поиграть?':
+#         speak('а ты закрылась?')
+#         text = listen()
+#         if text == 'да':
+#             speak('открой третью с конца игру в библиотеке стима')
+#         else:
+#             speak('много хочешь.')
+#             webbrowser.open('https://www.youtube.com/watch?v=avXxjwyFMKE')
+#     else:
+#         speak('я не понимаю, что ты от меня хочешь, кожаный мешок.')
+
+
+while True:
+    text = input()
     if text == 'закрыть':
         quit()
     elif text == 'блокнот':
         os.system('notepad.exe')
     elif text == 'во что бы поиграть?':
         speak('а ты закрылась?')
-        text = listen()
+        text = input()
         if text == 'да':
             speak('открой третью с конца игру в библиотеке стима')
         else:
